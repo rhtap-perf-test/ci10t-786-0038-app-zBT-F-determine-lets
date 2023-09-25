@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-f5qo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0038-tenant/ci10t-786-0038-app/devfile-sample-f5qo@sha256:b2291ef12bdb870c132e1b70922844abfb21b5ea36aaa5fd9991cdbc97a1acd2
+        name: my-nodejs
+        resources: {}
+status: {}
